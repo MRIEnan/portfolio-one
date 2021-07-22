@@ -18,13 +18,19 @@
 }
 
 
-.my-portfolio-h1 h1, .my-experience-h1 h1, .clients-testimonials-h1 h1{
+.my-portfolio-h1 h1, 
+.my-experience-h1 h1, 
+.clients-testimonials-h1 h1, 
+.my-contact-h1 h1{
     font-size: 30px;
     margin: 25px auto 25px auto;
     color: #111111;
 }
 
-.my-portfolio-h1 h1 span, .my-experience-h1 h1 span, .clients-testimonials-h1 h1 span{
+.my-portfolio-h1 h1 span, 
+.my-experience-h1 h1 span, 
+.clients-testimonials-h1 h1 span,
+.my-contact-h1 span{
     color: #56c7f3;
 }
 
@@ -652,12 +658,15 @@ header{
 /* history ends  */
 
 /* my experience starts  */
+#link-experience{
+    padding-top: 40px;
+}
 
 .my-experience-container{
     width: calc(80% - 40px);
     display: grid;
     margin:  auto;
-    padding: 40px 20px;
+    padding:40px 20px;
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -691,9 +700,12 @@ header{
 
 /* my experience ends  */
 
+/* clients testimonial starts  */
+
 .clients-testimonial-background{
     background-image: url("../images/background/mre/DSC_0647.JPG");
     offset: contain;
+    padding-top: 40px;
 }
 
 .clients-testimonials-h1 h1{
@@ -754,4 +766,105 @@ header{
 
 .testimonials-card .client-image img{
     width: 45px;
+}
+
+/* clients testimonial ends  */
+
+/* my contact starts  */
+
+
+.my-contact-container{
+    /* background-color: red; */
+    width: calc( 80% - 40px);
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 400px 40%;
+    justify-content: center;
+}
+
+.my-contact-container .my-contact-form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.my-contact-container .my-contact-form .name-email{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: violet; */
+    margin-bottom: 20px;
+}
+
+.my-contact-container .my-contact-form .name-email input{
+    width: 47%;
+    height: 26px;
+}
+
+.my-contact-container .my-contact-form .message textarea{
+    display: inline-block;
+    width: calc( 100% - 2px);
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.my-contact-container .my-contact-form a{
+    display: inline;
+    width: 60px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #56c7f3;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.my-contact-container .my-contact-info{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.my-contact-container .my-contact-info .info-street,
+.my-contact-container .my-contact-info .info-number, 
+.my-contact-container .my-contact-info .info-website {
+    margin: 10px 0;
+}
+
+.my-contact-container .my-contact-info .info-street i, 
+.my-contact-container .my-contact-info .info-number i,
+.my-contact-container .my-contact-info .info-website i{
+    color: #56c7f3;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.my-contact-container .my-contact-info .info-street h4, 
+.my-contact-container .my-contact-info .info-number h4,
+.my-contact-container .my-contact-info .info-website h4{
+    margin-bottom: 1px;
+}
+
+
+/* my contact ends  */
+
+footer{
+    background-color: #6a6a6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+footer p span:nth-child(1){
+    color: #ffffff;
+}
+footer p span:nth-child(2){
+    color: #56c7f3;
 }

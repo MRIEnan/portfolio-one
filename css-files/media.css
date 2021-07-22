@@ -229,3 +229,42 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+
+/* my contact starts */
+@media only screen and (max-width: 1000px) {
+    .my-contact-container{
+        width: calc( 100% - 40px);
+    }
+}
+@media only screen and (max-width: 900px) {
+    .my-contact-container{
+        grid-template-columns: 300px 40%;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    .my-contact-container{
+        grid-template-columns: 280px;
+    }
+    .my-contact-container .my-contact-form{
+        margin-left: auto;
+        width: 100%;
+    }
+    
+    .my-contact-container .my-contact-form .name-email{
+        flex-direction: column;
+    }
+    .my-contact-container .my-contact-form .name-email input{
+        width: calc( 100% - 1px);
+        margin-bottom: 10px;
+    }
+    .my-contact-container .my-contact-form a{
+        margin: auto;
+    }
+
+    
+    .my-contact-container .my-contact-info{
+        align-items: center;
+    }
+}
