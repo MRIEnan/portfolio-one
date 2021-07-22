@@ -102,3 +102,65 @@
         margin: 20px auto;
     }
 }
+
+
+/* my skills section  */
+
+@media only screen and (max-width: 1200px){
+    .my-skills-container{
+        width: calc( 90% - 40px);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .my-skills-container{
+        width:  calc( 100% - 40px);
+    }
+
+    .my-skill-card{
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .my-skills-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+/* my portfolio starts  */
+
+@media only screen and (max-width: 1200px){
+    .my-portfolio-container{
+        width: calc( 90% - 40px);
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .my-portfolio-container{
+        width: calc( 100% - 40px);
+    }
+}
+
+@media only screen and (max-width: 872px){
+    .my-portfolio-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 677px){
+    .my-portfolio-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .portfolio-categories{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-categories a{
+        margin: 10px auto 10px auto;
+    }
+}
