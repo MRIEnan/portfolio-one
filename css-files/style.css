@@ -18,6 +18,16 @@
 }
 
 
+.my-portfolio-h1 h1, .my-experience-h1 h1, .clients-testimonials-h1 h1{
+    font-size: 30px;
+    margin: 25px auto 25px auto;
+    color: #111111;
+}
+
+.my-portfolio-h1 h1 span, .my-experience-h1 h1 span, .clients-testimonials-h1 h1 span{
+    color: #56c7f3;
+}
+
 /* header starts  */
 
 
@@ -139,6 +149,9 @@ header{
     overflow: hidden;
     margin-bottom: 16px;
 }
+.home-container .p-container{
+    border-right: 3px solid #ffffff;
+}
 .home-container .p-container .p-container-wd{
     /* background: chartreuse; */
     position: absolute;
@@ -147,7 +160,7 @@ header{
     /* background-color: red; */
     font-size: 18px;
     padding: 9px 20px 9px 6px;
-    border-right: 3px solid #ffffff;
+    /* border-right: 3px solid #ffffff; */
     left: 0px;
     animation: animate-wd 20s ease-in infinite;
 }
@@ -181,7 +194,7 @@ header{
     width: 130px;
     font-size: 18px;
     padding: 10px 20px 10px 6px;
-    border-right: 4px solid #ffffff;
+    /* border-right: 4px solid #ffffff; */
     /* transform: scale(0); */
     animation: animate-uu 20s ease-in infinite;
 }
@@ -301,11 +314,6 @@ header{
 
 /* main starts */
 
-main{
-    display: inline-block;
-    height: 657px;
-    width: 100%;
-}
 
 /* about starts */
 
@@ -486,7 +494,7 @@ main{
 
 .my-skills-h1 h1{
     font-size: 30px;
-    margin: 10px 0 12px 0;
+    margin: 50px 0 12px 0;
     color: #ffffff;
 }
 
@@ -527,16 +535,6 @@ main{
 
 /* my portfolio starts */
 
-.my-portfolio-h1 h1{
-    font-size: 30px;
-    margin: 25px auto 25px auto;
-    color: #111111;
-}
-
-.my-portfolio-h1 h1 span{
-    color: #56c7f3;
-}
-
 .portfolio-categories{
     margin: 0px auto 20px;
 }
@@ -544,6 +542,13 @@ main{
     text-decoration: none;
     padding: 4px 10px;
     color: #111111;
+    border-radius: 8px;
+    transition: all 500ms linear;
+}
+
+.portfolio-categories a:hover{
+    transition: all 1s linear;
+    background-color: #56c7f3;
 }
 
 .my-portfolio-container{
@@ -577,14 +582,15 @@ main{
     background-image: url("../images/background/bg-image-21.jpg");
 }
 .portfolio-card-background-5{
-    background-image: url("../images/background/bg-image-23.jpg");
+    background-image: url("../images/background/bg-image-17.jpg");
 }
 .portfolio-card-background-6{
     background-image: url("../images/background/bg-image-15.jpg");
 }
 
 .portfolio-card h1,.portfolio-card p{
-    visibility: hidden;
+    /* visibility: hidden; */
+    transform: scale(0);
 }
 
 .portfolio-card:hover a{
@@ -594,13 +600,158 @@ main{
     width: 100%;
 }
 
-.portfolio-card:hover h1, .portfolio-card:hover p{
-    transition: all 1s linear;
-    visibility: visible;
+.portfolio-card:hover h1{
+    transition: all 500ms linear;
+    /* visibility: visible; */
+    transform-origin: bottom;
+    transform: scale(1);
+}
+.portfolio-card:hover p{
+    transition: all 500ms linear;
+    /* visibility: visible; */
+    transform-origin: top;
+    transform: scale(1);
 }
 
 .portfolio-card:hover a{
-    background-color: #000;
+    background-color: #56c7f3;
     opacity: .5;
     cursor: crosshair;
+}
+
+
+/* my portfolio ends  */
+
+/* history starts  */
+
+.history-container{
+    background-color: rgb(35, 36, 35);
+    display: grid;
+    width: 100%;
+    padding: 40px auto;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.history-card{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: scale(1.5); */
+}
+
+.history-card h1{
+    color: #56c7f3;
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+.history-card p{
+    color: #ffffff;
+}
+
+/* history ends  */
+
+/* my experience starts  */
+
+.my-experience-container{
+    width: calc(80% - 40px);
+    display: grid;
+    margin:  auto;
+    padding: 40px 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.my-experience-card{
+    display: inline-block;
+    width: 360px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.my-experience-container h3{
+    font-size: 24px;
+    margin: 10px;
+}
+.my-experience-container h4{
+    font-size: 18px;
+    margin: 0 10px 10px 10px;
+}
+.my-experience-container p:nth-child(3){
+    margin-left: 10px;
+    /* line-height: 20px; */
+}
+.my-experience-container p:nth-child(4){
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* my experience ends  */
+
+.clients-testimonial-background{
+    background-image: url("../images/background/mre/DSC_0647.JPG");
+    offset: contain;
+}
+
+.clients-testimonials-h1 h1{
+    color: #ffffff;
+}
+
+.clients-testimonials-container{
+    width: calc(80% - 40px);
+    display: grid;
+    margin:  auto;
+    padding: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.testimonials-card{
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.testimonials-card .icon{
+    color: #56c7f3;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.testimonials-card p{
+    line-height: 20px;
+}
+
+.testimonials-card .client-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-card .client-info{
+    margin: 20px 0;
+}
+
+.testimonials-card .client-info .client-description h5{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+.testimonials-card .client-info .client-description h6{
+    font-weight: 0;
+    font-size: 16px;
+    color: #6a6a6a;
+}
+
+.testimonials-card .client-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-card .client-image img{
+    width: 45px;
 }
