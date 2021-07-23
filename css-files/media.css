@@ -7,6 +7,75 @@
 }
 
 
+/* nav menu  */
+
+@media only screen and (max-width:820px) {
+    #link-home input[type=checkbox]{
+        background-color: #277cd1;
+    }
+    
+
+    #link-home .check-mark{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        background-color: transparent;
+        z-index: 7;
+        background-image: url("../images/icon/menu-icon-2.png");
+    }
+
+    .nav-container{
+        overflow: unset;
+    }
+
+    .nav-menu-bar{
+        height: 40px;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background-color: #31323394;
+        transition: right 2s ease;
+    }
+
+    .nav-menu-bar ul{
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+        background-color: #31323394;
+        /* right: -300px; */
+        /* transition: right 1s ease; */
+        padding-top: 40px;
+    }
+
+    .nav-menu-bar>ul li{
+        border: 1px solid #fff;
+        margin: 2px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #link-home input:checked~.nav-menu-bar{
+        height: 340px;
+        right: 0;
+        overflow: visible;
+        transition: right 1s ease;
+    }
+
+    #link-home input:checked~.nav-menu-bar>ul{
+        top: 0;
+        right: 0px;
+        transition: all 1s ease;
+    }
+
+/* @media only screen and (max-width: 400px) {
+    #link-home input:checked ~.nav-menu-bar{
+        width: 70%;
+    }
+} */
+
+
 /* home section */
 /* @media only screen and (max-width:320px) {
     .about-h1{

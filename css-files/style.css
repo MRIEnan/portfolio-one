@@ -39,7 +39,7 @@
 
 header{
     /* background: #3a3a3a; */
-    background-image: url("../images/background/mre/DSC_0699.JPG");
+    background-image: url("../images/background/mre/DSC_0699-copy.JPG");
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,6 +49,12 @@ header{
 }
 
 /* nav bar starts */
+
+.nav-menu-button{
+    display: none;
+}
+
+
 
 .nav-container{
     position: fixed;
