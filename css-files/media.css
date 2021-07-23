@@ -68,7 +68,7 @@
         right: 0px;
         transition: all 1s ease;
     }
-
+}
 /* @media only screen and (max-width: 400px) {
     #link-home input:checked ~.nav-menu-bar{
         width: 70%;
