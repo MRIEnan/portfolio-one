@@ -44,8 +44,6 @@
         position: relative;
         top: 0px;
         background-color: #31323394;
-        /* right: -300px; */
-        /* transition: right 1s ease; */
         padding-top: 40px;
     }
 
@@ -69,23 +67,8 @@
         transition: all 1s ease;
     }
 }
-/* @media only screen and (max-width: 400px) {
-    #link-home input:checked ~.nav-menu-bar{
-        width: 70%;
-    }
-} */
-
 
 /* home section */
-/* @media only screen and (max-width:320px) {
-    .about-h1{
-        height: 38px;
-        width: 140px;
-        text-align: center;
-        display: inline-block;
-        background-color: red;
-    }    
-} */
 
 
 /* about section  */
@@ -334,6 +317,7 @@
 
     
     .my-contact-container .my-contact-info{
+        text-align: center;
         align-items: center;
     }
 }
