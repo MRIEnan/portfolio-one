@@ -164,7 +164,7 @@ header{
 .home-container .p-container .p-container-wd{
     position: absolute;
     display: inline-block;
-    width: 130px;
+    width: 136px;
     font-size: 18px;
     padding: 10px 20px 10px 6px;
     left: 0px;
@@ -194,7 +194,7 @@ header{
 
 .home-container .p-container .p-container-uu{
     position: absolute;
-    width: 130px;
+    width: 136px;
     font-size: 18px;
     padding: 10px 20px 10px 6px;
     animation: animate-uu 20s ease-in infinite;
