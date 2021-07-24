@@ -70,6 +70,12 @@
 
 /* home section */
 
+@media only screen and (max-width: 300px) {
+    .home-container .profile-link-container .profile-link{
+        height: 30px;
+        width: 30px;
+    }
+}
 
 /* about section  */
 
@@ -94,7 +100,7 @@
 
     .about-section-container{
         flex-direction: column;
-        width: 100%;
+        width: calc( 100% - 4px);
         padding: 2px;
     }
 
@@ -115,6 +121,28 @@
 
     .button a{
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .about-image img{
+        max-width: 240px;
+    }
+
+    .about-content-container{
+        height: 657px;
+        max-width: calc( 100% - 8px);
+        padding: 14px 4px 10px 4px;
+    }
+
+    .about-content-container .button a{
+        font-size: 10px;
+    }
+    .about-content-container table{
+        width: calc(100% - 20px);
+    }
+    .about-content-container table tr td{
+        font-size: 12px;
     }
 }
 
@@ -154,6 +182,12 @@
         margin: 20px auto;
     }
 }
+@media only screen and (max-width: 300px){
+    .service-card{
+        margin: 20px auto;
+        width: 90%;
+    }
+}
 
 
 /* my skills section  */
@@ -175,6 +209,15 @@
 
     .skill-progress{
         width: 90%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .my-skills-container{
+        width:  calc( 100% - 40px);
+    }
+
+    .my-skill-card{
+        min-width: 90%;
     }
 }
 
@@ -256,6 +299,11 @@
         grid-template-columns: repeat(1,1fr);
     }
 }
+@media only screen and (max-width: 677px){
+    .my-experience-card{
+        width: 90%;
+    }
+}
 
 
 /* clients testimonial starts  */
@@ -279,6 +327,11 @@
 @media only screen and (max-width: 677px) {
     .clients-testimonials-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (max-width: 300px) {
+    .testimonials-card{
+        width: 90%;
     }
 }
 
@@ -319,5 +372,15 @@
     .my-contact-container .my-contact-info{
         text-align: center;
         align-items: center;
+    }
+}
+@media only screen and (max-width: 300px) {
+
+    .my-contact-container{
+        grid-template-columns: 90%;
+    }
+
+    .my-contact-container .my-contact-form .name-email input{
+        width: calc(90% -40px);
     }
 }
